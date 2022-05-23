@@ -1,0 +1,46 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+html
+    width: 100%
+    font-family: 'Fredoka', sans-serif
+    font-weight: lighter
+    font-size: 62.5%
+    +flex(start, center, column nowrap)
+html::-webkit-scrollbar
+    width: 0px
+body
+    width: 100vw
+    max-width: 1240px
+    color: $white_1
+    background: $black_2
+    +flex(center, center, column nowrap)
+    row-gap: 5rem
+    &>*
+        width: 100%
+    .navbar, .header, .main , .footer
+        padding: 2rem
+    .navbar, .header, .main .main-section, .footer
+        background: $black_1
+    .navbar .nav-theme
+        background: $black_2
+    .main a
+        color: $white_2
+body.theme-light
+    color: $black_2
+    background: $white_2
+    .navbar, .header, .main>.main-section, .footer
+        background: $white_1
+    .navbar .nav-theme
+        background: $white_2
+    .header form input[type="text"]
+        color: $black_2
+    .main a
+        color: $black_2
+    
+a
+    display: block
+    text-decoration: none
+h1, h2, h3, h4, h5
+    font-weight: lighter

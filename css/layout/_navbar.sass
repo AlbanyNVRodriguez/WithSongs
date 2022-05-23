@@ -1,0 +1,24 @@
+.navbar
+    height: 6rem
+    +flex(space-between, center, row nowrap)
+.nav-logo
+    font-size: 2.5rem
+.nav-theme
+    position: relative
+    width: 8rem
+    height: 2.5rem
+    border-radius: 20px
+    &::after
+        position: absolute
+        top: -0.25rem
+        left: 0
+        content: ""
+        width: 3rem
+        height: 3rem
+        border-radius: 50%
+        background: $color_secondary
+        cursor: pointer
+        transition: all 200ms linear
+    &.active::after
+        background: $color_primary
+        transform: translateX(8rem - 3rem)
